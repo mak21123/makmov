@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makzone</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #080808;
+      color: white;
+    }
+
+    header {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 6%;
+      background: #050505;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #e50914;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #e50914;
+    }
+
+    .hero {
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      padding: 60px 8%;
+      background:
+        linear-gradient(to right, #080808 25%, rgba(8,8,8,.75), rgba(8,8,8,.2)),
+        linear-gradient(to top, #080808, transparent);
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 58px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #e50914;
+    }
+
+    .hero p {
+      color: #bbb;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 25px;
+      background: #e50914;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #b20710;
+    }
+
+    section {
+      padding: 45px 6%;
+    }
+
+    section h2 {
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      height: 280px;
+      background: linear-gradient(145deg, #1c1c1c, #101010);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #252525;
+      transition: .25s;
+    }
+
+    .card:hover {
+      transform: scale(1.04);
+      border-color: #e50914;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #999;
+      font-size: 14px;
+    }
+
+    .coming {
+      text-align: center;
+      padding: 80px 20px;
+      background: #111;
+    }
+
+    .coming h2 {
+      font-size: 40px;
+      color: #e50914;
+    }
+
+    .coming p {
+      color: #aaa;
+      margin-top: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      nav a {
+        margin-left: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">MAKZONE</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#movies">Movies</a>
+      <a href="#football">Football</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welcome to <span>Makzone</span></h1>
+
+      <p>
+        Your new place for movies, trailers, entertainment and football.
+        Something big is coming.
+      </p>
+
+      <a href="#coming" class="button">Watch Now</a>
+    </div>
+  </section>
+
+  <section id="movies">
+    <h2>Featured</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div>
+          <h3>Marvel</h3>
+          <p>Coming soon</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Action</h3>
+          <p>Coming soon</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Thrillers</h3>
+          <p>Coming soon</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>New Releases</h3>
+          <p>Coming soon</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="football">
+    <h2>Football</h2>
+
+    <div class="cards">
+      <div class="card">
+        <div>
+          <h3>Football Hub</h3>
+          <p>Coming soon</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Latest Matches</h3>
+          <p>Coming soon</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="coming" id="coming">
+    <h2>COMING SOON</h2>
+    <p>Makzone is getting ready. Stay tuned.</p>
+  </section>
+
+  <footer>
+    © 2026 Makzone — All rights reserved.
+  </footer>
+
+</body>
+</html>
